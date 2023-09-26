@@ -1,0 +1,7 @@
+<map id="Data" name="Data">
+<area shape="rect" id="node1" title="A Class called Data that is used to hold all the data for the program." alt="" coords="189,5,366,361"/>
+<area shape="rect" id="node2" href="$class_classifier.html" title=" " alt="" coords="190,409,365,560"/>
+<area shape="rect" id="node3" href="$class_dummy_classifier.html" title=" " alt="" coords="5,637,171,788"/>
+<area shape="rect" id="node4" href="$class_k_n_n_classifier.html" title=" " alt="" coords="195,637,360,788"/>
+<area shape="rect" id="node5" href="$class_n_n_classifier.html" title=" " alt="" coords="384,608,563,817"/>
+</map>

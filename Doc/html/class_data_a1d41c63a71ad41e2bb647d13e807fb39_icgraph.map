@@ -1,0 +1,6 @@
+<map id="Data::getDistanceFrom" name="Data::getDistanceFrom">
+<area shape="rect" id="node1" title="A function that calculate the distance between Data object." alt="" coords="507,31,663,56"/>
+<area shape="rect" id="node2" href="$class_n_n_classifier.html#a9a641cd99c49c26a37624f80d9e6f202" title="A neartestNeighbour function that finds the nearestNeighbour between points." alt="" coords="256,31,459,56"/>
+<area shape="rect" id="node3" href="$class_n_n_classifier.html#a0e57abdaad7125b3395fc28ea5cf8e14" title="A pure virtual member for testing which does not have a body." alt="" coords="5,5,208,31"/>
+<area shape="rect" id="node4" href="$class_n_n_classifier.html#a6857711ba8150b246ff4c79bac978b77" title=" " alt="" coords="5,55,208,80"/>
+</map>

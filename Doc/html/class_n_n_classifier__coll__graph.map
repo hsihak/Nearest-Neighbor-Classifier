@@ -1,0 +1,5 @@
+<map id="NNClassifier" name="NNClassifier">
+<area shape="rect" id="node1" title="A Class called NNClassifier that will inherits from Classifier Class." alt="" coords="121,439,299,663"/>
+<area shape="rect" id="node2" href="$class_classifier.html" title=" " alt="" coords="5,108,204,259"/>
+<area shape="rect" id="node3" href="$class_data.html" title="A Class called Data that is used to hold all the data for the program." alt="" coords="228,5,405,361"/>
+</map>

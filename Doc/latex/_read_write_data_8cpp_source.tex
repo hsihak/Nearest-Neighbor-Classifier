@@ -1,0 +1,87 @@
+\hypertarget{_read_write_data_8cpp_source}{}\doxysection{Read\+Write\+Data.\+cpp}
+\label{_read_write_data_8cpp_source}\index{D:/Winter 2023/Object Oriented Programming/Final Project -\/ Hangsihak Sin/Final Project -\/ Lab 08\_09 -\/ Hangsihak Sin/Lab 08\_09/ReadWriteData.cpp@{D:/Winter 2023/Object Oriented Programming/Final Project -\/ Hangsihak Sin/Final Project -\/ Lab 08\_09 -\/ Hangsihak Sin/Lab 08\_09/ReadWriteData.cpp}}
+\mbox{\hyperlink{_read_write_data_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00001}00001\ \textcolor{comment}{//\ Final\ Project\ -\/\ Lab\ 08/09}}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00002}00002\ \textcolor{comment}{//\ Implmentation\ for\ ReadWriteData\ Class\ Library}}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00003}00003\ \textcolor{comment}{//\ Hangsihak\ Sin\ }}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00004}00004\ \textcolor{comment}{//\ PROG71020\ -\/\ 23W}}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00005}00005\ \textcolor{comment}{//\ April\ 15,\ 2023}}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00006}00006\ }
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00007}00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_n_n_classifier_8h}{NNClassifier.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00008}00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_data_8h}{Data.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00009}00009\ }
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00010}00010\ \textcolor{comment}{//\ A\ setDimensions\ Function\ that\ handle\ read\ and\ write\ file}}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00011}\mbox{\hyperlink{class_n_n_classifier_a2c5f85f65850655662303480e41105ba}{00011}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_read_write_data_8cpp_aa77b4ed21d379bb0d589676f47fc3bf4}{setDimensions}}(std::ifstream\&\ fin,\ \mbox{\hyperlink{class_n_n_classifier}{NNClassifier}}\&\ nnClassifier,\ \mbox{\hyperlink{class_data}{Data}}\&\ phoneOrientation,\ \textcolor{keywordtype}{int}*\ index,\ \textcolor{keywordtype}{int}\ type)}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00012}00012\ \{}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00013}00013\ \ \ \ \ std::string\ line;}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00014}00014\ \ \ \ \ std::getline(fin,\ line);}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00015}00015\ \ \ \ \ std::istringstream\ issline(line);}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00016}00016\ }
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00017}00017\ \ \ \ \ std::string\ dimensions;}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00018}00018\ \ \ \ \ std::getline(issline,\ dimensions);}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00019}00019\ \ \ \ \ std::istringstream\ issdimension(dimensions);}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00021}00021\ \ \ \ \ std::string\ x;}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00022}00022\ \ \ \ \ std::string\ y;}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00023}00023\ \ \ \ \ std::string\ z;}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00024}00024\ \ \ \ \ std::string\ orientation;}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00026}00026\ \ \ \ \ \textcolor{keywordtype}{double}\ xCoordinate\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00027}00027\ \ \ \ \ \textcolor{keywordtype}{double}\ yCoordinate\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00028}00028\ \ \ \ \ \textcolor{keywordtype}{double}\ zCoordinate\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00029}00029\ \ \ \ \ \textcolor{keywordtype}{int}\ oOrientation\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00031}00031\ \ \ \ \ \textcolor{keywordflow}{while}\ (!issdimension.eof())}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00032}00032\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00033}00033\ \ \ \ \ \ \ \ \ std::getline(issdimension,\ x,\ \textcolor{charliteral}{','});}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00034}00034\ \ \ \ \ \ \ \ \ xCoordinate\ =\ stod(x);}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00035}00035\ }
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00036}00036\ \ \ \ \ \ \ \ \ std::getline(issdimension,\ y,\ \textcolor{charliteral}{','});}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00037}00037\ \ \ \ \ \ \ \ \ yCoordinate\ =\ stod(y);}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00038}00038\ }
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00039}00039\ \ \ \ \ \ \ \ \ std::getline(issdimension,\ z,\ \textcolor{charliteral}{','});}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00040}00040\ \ \ \ \ \ \ \ \ zCoordinate\ =\ stod(z);}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00041}00041\ }
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00042}00042\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (type\ ==\ 1\ ||\ type\ ==\ 2)}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00043}00043\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00044}00044\ \ \ \ \ \ \ \ \ \ \ \ \ std::getline(issdimension,\ orientation);}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00045}00045\ \ \ \ \ \ \ \ \ \ \ \ \ oOrientation\ =\ stoi(orientation);}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00046}00046\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00047}00047\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00048}00048\ }
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00049}00049\ \ \ \ \ \textcolor{keywordflow}{if}\ ((xCoordinate\ >=\ -\/1\ \&\&\ xCoordinate\ <=\ 1)\ \&\&\ (yCoordinate\ >=\ -\/1\ \&\&\ yCoordinate\ <=\ 1)\ \&\&\ (zCoordinate\ >=\ -\/1\ \&\&\ zCoordinate\ <=\ 1)\ ||\ (oOrientation\ >=\ 1\ \&\&\ oOrientation\ <=\ 6))}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00050}00050\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00051}00051\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ type\ 1\ is\ for\ trainOrientation}}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00052}00052\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (type\ ==\ 1)}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00053}00053\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00054}00054\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_data}{Data}}\ newPoint(xCoordinate,\ yCoordinate,\ zCoordinate,\ oOrientation);}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00055}00055\ \ \ \ \ \ \ \ \ \ \ \ \ nnClassifier.\mbox{\hyperlink{class_n_n_classifier_a0352fb700e7315541cf548b4a1a97397}{dataPoints}}[*index]\ =\ newPoint;}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00056}00056\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00057}00057\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ type\ 2\ is\ for\ testingOrientation}}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00058}00058\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (type\ ==\ 2)}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00059}00059\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00060}00060\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_data}{Data}}\ newPoint(xCoordinate,\ yCoordinate,\ zCoordinate,\ oOrientation);}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00061}00061\ \ \ \ \ \ \ \ \ \ \ \ \ nnClassifier.\mbox{\hyperlink{class_n_n_classifier_a6322f92c9c39ee5c623e15830275a2ca}{testingPoints}}[*index]\ =\ newPoint;}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00062}00062\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00063}00063\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ type\ 3\ is\ for\ predictOrientation}}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00064}00064\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (type\ ==\ 3)}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00065}00065\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00066}00066\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_data}{Data}}\ newPoint(xCoordinate,\ yCoordinate,\ zCoordinate,\ oOrientation);}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00067}00067\ \ \ \ \ \ \ \ \ \ \ \ \ nnClassifier.\mbox{\hyperlink{class_n_n_classifier_a6322f92c9c39ee5c623e15830275a2ca}{testingPoints}}[*index]\ =\ newPoint;}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00068}00068\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00069}00069\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00070}00070\ }
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00071}00071\ }
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00072}00072\ \}}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00073}00073\ }
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00074}00074\ \textcolor{comment}{//\ Operator\ Overloading\ Function\ }}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00075}\mbox{\hyperlink{class_data_a146b599a712c4101624ef516af6dd744}{00075}}\ std::ofstream\&\ \mbox{\hyperlink{_read_write_data_8cpp_a4a9fe8135fb4c7adebf50ef667de2143}{operator<<}}(std::ofstream\&\ fout,\ \mbox{\hyperlink{class_data}{Data}}\&\ phoneOrientation)}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00076}00076\ \{}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00077}00077\ \ \ \ \ fout\ <<\ phoneOrientation.\mbox{\hyperlink{class_data_ac5dbe9054fa73c284c7712949b6c85b2}{getX}}()\ <<\ \textcolor{stringliteral}{"{},"{}};}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00078}00078\ \ \ \ \ fout\ <<\ phoneOrientation.\mbox{\hyperlink{class_data_a58ccf262fd88b328d1ff52597ca9734a}{getY}}()\ <<\ \textcolor{stringliteral}{"{},"{}};}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00079}00079\ \ \ \ \ fout\ <<\ phoneOrientation.\mbox{\hyperlink{class_data_a74c006dc9fc4b66bfc326833a3e35a7a}{getZ}}()\ <<\ \textcolor{stringliteral}{"{},"{}};}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00080}00080\ \ \ \ \ \textcolor{keywordflow}{return}\ fout;}
+\DoxyCodeLine{\Hypertarget{_read_write_data_8cpp_source_l00081}00081\ \}}
+
+\end{DoxyCode}

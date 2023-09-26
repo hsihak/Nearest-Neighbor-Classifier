@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_classifier.html" title=" " alt="" coords="5,55,80,80"/>
+<area shape="rect" id="node2" href="$class_dummy_classifier.html" title="A Class called DummyClassifier that will inherits from Classifier Class." alt="" coords="128,5,248,31"/>
+<area shape="rect" id="node3" href="$class_k_n_n_classifier.html" title="A Class called KNNClassifier that will inherits from Classifier Class." alt="" coords="137,55,239,80"/>
+<area shape="rect" id="node4" href="$class_n_n_classifier.html" title="A Class called NNClassifier that will inherits from Classifier Class." alt="" coords="141,104,235,129"/>
+</map>

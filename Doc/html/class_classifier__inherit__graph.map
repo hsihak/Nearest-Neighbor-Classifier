@@ -1,0 +1,6 @@
+<map id="Classifier" name="Classifier">
+<area shape="rect" id="node1" title=" " alt="" coords="174,5,373,156"/>
+<area shape="rect" id="node2" href="$class_dummy_classifier.html" title="A Class called DummyClassifier that will inherits from Classifier Class." alt="" coords="5,241,168,406"/>
+<area shape="rect" id="node3" href="$class_k_n_n_classifier.html" title="A Class called KNNClassifier that will inherits from Classifier Class." alt="" coords="192,241,355,406"/>
+<area shape="rect" id="node4" href="$class_n_n_classifier.html" title="A Class called NNClassifier that will inherits from Classifier Class." alt="" coords="379,204,557,443"/>
+</map>

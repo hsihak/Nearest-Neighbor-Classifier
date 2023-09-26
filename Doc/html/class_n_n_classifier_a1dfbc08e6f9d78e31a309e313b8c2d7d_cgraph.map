@@ -1,0 +1,9 @@
+<map id="NNClassifier::testing" name="NNClassifier::testing">
+<area shape="rect" id="node1" title="A testing function that used to verify if implementation works as expected." alt="" coords="5,43,145,68"/>
+<area shape="rect" id="node2" href="$class_data.html#aedfdd37427b23975eb849cdb6d8a1f8d" title="A function that get the orientation from Data object." alt="" coords="225,5,364,31"/>
+<area shape="rect" id="node3" href="$class_n_n_classifier.html#a9a641cd99c49c26a37624f80d9e6f202" title="A neartestNeighbour function that finds the nearestNeighbour between points." alt="" coords="193,79,396,104"/>
+<area shape="rect" id="node4" href="$class_data.html#a1d41c63a71ad41e2bb647d13e807fb39" title="A function that calculate the distance between Data object." alt="" coords="444,79,600,104"/>
+<area shape="rect" id="node5" href="$class_data.html#ac5dbe9054fa73c284c7712949b6c85b2" title="A getter function for X member attribute." alt="" coords="649,29,731,55"/>
+<area shape="rect" id="node6" href="$class_data.html#a58ccf262fd88b328d1ff52597ca9734a" title="A getter function for Y member attribute." alt="" coords="648,79,732,104"/>
+<area shape="rect" id="node7" href="$class_data.html#a74c006dc9fc4b66bfc326833a3e35a7a" title="A getter function for Z member attribute." alt="" coords="649,128,731,153"/>
+</map>

@@ -1,0 +1,15 @@
+<map id="main" name="main">
+<area shape="rect" id="node1" title=" " alt="" coords="5,95,56,121"/>
+<area shape="rect" id="node2" href="$class_dummy_classifier.html#a3f1147668499e0014b8816ee5598117f" title="A pure virtual member for testing which does not have a body." alt="" coords="127,5,293,45"/>
+<area shape="rect" id="node3" href="$class_k_n_n_classifier.html#a74c309cbd3e492db67dac1eed7c52785" title="A pure virtual member for testing which does not have a body." alt="" coords="104,70,316,95"/>
+<area shape="rect" id="node4" href="$class_n_n_classifier.html#a33d51eb10d776649fa7c744a061b2f17" title="A pure virtual member for testing which does not have a body." alt="" coords="109,119,311,145"/>
+<area shape="rect" id="node13" href="$class_n_n_classifier.html#af6d010330c751afcf35f6595d72e7d79" title="A pure virtual member for testing which does not have a body." alt="" coords="115,169,305,194"/>
+<area shape="rect" id="node5" href="$class_data.html#aa5ba9a710495735c9733e822b1b5120a" title="A getter function for O member attribute." alt="" coords="423,33,508,58"/>
+<area shape="rect" id="node6" href="$class_data.html#aedfdd37427b23975eb849cdb6d8a1f8d" title="A function that get the orientation from Data object." alt="" coords="396,82,535,107"/>
+<area shape="rect" id="node7" href="$class_n_n_classifier.html#a9a641cd99c49c26a37624f80d9e6f202" title="A neartestNeighbour function that finds the nearestNeighbour between points." alt="" coords="364,155,567,181"/>
+<area shape="rect" id="node12" href="$class_data.html#a3dbab128fdd819544eba608ea4d08c4b" title="A setter function for O member attribute." alt="" coords="423,205,508,230"/>
+<area shape="rect" id="node8" href="$class_data.html#a1d41c63a71ad41e2bb647d13e807fb39" title="A function that calculate the distance between Data object." alt="" coords="615,155,771,181"/>
+<area shape="rect" id="node9" href="$class_data.html#ac5dbe9054fa73c284c7712949b6c85b2" title="A getter function for X member attribute." alt="" coords="819,106,902,131"/>
+<area shape="rect" id="node10" href="$class_data.html#a58ccf262fd88b328d1ff52597ca9734a" title="A getter function for Y member attribute." alt="" coords="819,155,903,181"/>
+<area shape="rect" id="node11" href="$class_data.html#a74c006dc9fc4b66bfc326833a3e35a7a" title="A getter function for Z member attribute." alt="" coords="819,205,902,230"/>
+</map>

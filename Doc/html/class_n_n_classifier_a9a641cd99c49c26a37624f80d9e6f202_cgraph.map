@@ -1,0 +1,7 @@
+<map id="NNClassifier::nearestNeighbour" name="NNClassifier::nearestNeighbour">
+<area shape="rect" id="node1" title="A neartestNeighbour function that finds the nearestNeighbour between points." alt="" coords="5,55,208,80"/>
+<area shape="rect" id="node2" href="$class_data.html#a1d41c63a71ad41e2bb647d13e807fb39" title="A function that calculate the distance between Data object." alt="" coords="256,55,412,80"/>
+<area shape="rect" id="node3" href="$class_data.html#ac5dbe9054fa73c284c7712949b6c85b2" title="A getter function for X member attribute." alt="" coords="461,5,543,31"/>
+<area shape="rect" id="node4" href="$class_data.html#a58ccf262fd88b328d1ff52597ca9734a" title="A getter function for Y member attribute." alt="" coords="460,55,544,80"/>
+<area shape="rect" id="node5" href="$class_data.html#a74c006dc9fc4b66bfc326833a3e35a7a" title="A getter function for Z member attribute." alt="" coords="461,104,543,129"/>
+</map>

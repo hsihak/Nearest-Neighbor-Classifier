@@ -1,0 +1,11 @@
+<map id="NNClassifier::predict" name="NNClassifier::predict">
+<area shape="rect" id="node1" title="A predict function the label of phone orientation based on the provided user input." alt="" coords="5,92,145,117"/>
+<area shape="rect" id="node2" href="$class_data.html#aa5ba9a710495735c9733e822b1b5120a" title="A getter function for O member attribute." alt="" coords="252,5,337,31"/>
+<area shape="rect" id="node3" href="$class_data.html#aedfdd37427b23975eb849cdb6d8a1f8d" title="A function that get the orientation from Data object." alt="" coords="225,55,364,80"/>
+<area shape="rect" id="node4" href="$class_n_n_classifier.html#a9a641cd99c49c26a37624f80d9e6f202" title="A neartestNeighbour function that finds the nearestNeighbour between points." alt="" coords="193,128,396,153"/>
+<area shape="rect" id="node9" href="$class_data.html#a3dbab128fdd819544eba608ea4d08c4b" title="A setter function for O member attribute." alt="" coords="252,177,337,203"/>
+<area shape="rect" id="node5" href="$class_data.html#a1d41c63a71ad41e2bb647d13e807fb39" title="A function that calculate the distance between Data object." alt="" coords="444,128,600,153"/>
+<area shape="rect" id="node6" href="$class_data.html#ac5dbe9054fa73c284c7712949b6c85b2" title="A getter function for X member attribute." alt="" coords="649,79,731,104"/>
+<area shape="rect" id="node7" href="$class_data.html#a58ccf262fd88b328d1ff52597ca9734a" title="A getter function for Y member attribute." alt="" coords="648,128,732,153"/>
+<area shape="rect" id="node8" href="$class_data.html#a74c006dc9fc4b66bfc326833a3e35a7a" title="A getter function for Z member attribute." alt="" coords="649,177,731,203"/>
+</map>

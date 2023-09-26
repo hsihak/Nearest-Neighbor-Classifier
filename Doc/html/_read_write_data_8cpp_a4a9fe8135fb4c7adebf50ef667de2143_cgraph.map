@@ -1,0 +1,6 @@
+<map id="operator&lt;&lt;" name="operator&lt;&lt;">
+<area shape="rect" id="node1" title="an operator overloading function that prints out the phoneOrientation attributes" alt="" coords="5,55,91,80"/>
+<area shape="rect" id="node2" href="$class_data.html#ac5dbe9054fa73c284c7712949b6c85b2" title="A getter function for X member attribute." alt="" coords="139,5,222,31"/>
+<area shape="rect" id="node3" href="$class_data.html#a58ccf262fd88b328d1ff52597ca9734a" title="A getter function for Y member attribute." alt="" coords="139,55,223,80"/>
+<area shape="rect" id="node4" href="$class_data.html#a74c006dc9fc4b66bfc326833a3e35a7a" title="A getter function for Z member attribute." alt="" coords="139,104,222,129"/>
+</map>

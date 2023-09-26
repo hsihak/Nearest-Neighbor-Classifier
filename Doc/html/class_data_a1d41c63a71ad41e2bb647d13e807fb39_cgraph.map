@@ -1,0 +1,6 @@
+<map id="Data::getDistanceFrom" name="Data::getDistanceFrom">
+<area shape="rect" id="node1" title="A function that calculate the distance between Data object." alt="" coords="5,55,161,80"/>
+<area shape="rect" id="node2" href="$class_data.html#ac5dbe9054fa73c284c7712949b6c85b2" title="A getter function for X member attribute." alt="" coords="210,5,293,31"/>
+<area shape="rect" id="node3" href="$class_data.html#a58ccf262fd88b328d1ff52597ca9734a" title="A getter function for Y member attribute." alt="" coords="209,55,293,80"/>
+<area shape="rect" id="node4" href="$class_data.html#a74c006dc9fc4b66bfc326833a3e35a7a" title="A getter function for Z member attribute." alt="" coords="210,104,293,129"/>
+</map>

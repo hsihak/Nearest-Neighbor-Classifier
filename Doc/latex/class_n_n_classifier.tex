@@ -1,0 +1,331 @@
+\hypertarget{class_n_n_classifier}{}\doxysection{NNClassifier Class Reference}
+\label{class_n_n_classifier}\index{NNClassifier@{NNClassifier}}
+
+
+A Class called \mbox{\hyperlink{class_n_n_classifier}{NNClassifier}} that will inherits from \mbox{\hyperlink{class_classifier}{Classifier}} Class.  
+
+
+
+
+{\ttfamily \#include \char`\"{}NNClassifier.\+h\char`\"{}}
+
+
+
+Inheritance diagram for NNClassifier\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{class_n_n_classifier__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for NNClassifier\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_n_n_classifier__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_n_n_classifier_af6d010330c751afcf35f6595d72e7d79}{train\+Orientation}} (std\+::string) override
+\begin{DoxyCompactList}\small\item\em A pure virtual member for testing which does not have a body. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_n_n_classifier_a6857711ba8150b246ff4c79bac978b77}{testing\+Orientation}} (std\+::string)
+\item 
+void \mbox{\hyperlink{class_n_n_classifier_a33d51eb10d776649fa7c744a061b2f17}{predict\+Orientation}} (double, double, double) override
+\begin{DoxyCompactList}\small\item\em A pure virtual member for testing which does not have a body. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_n_n_classifier_a0e57abdaad7125b3395fc28ea5cf8e14}{predict\+Orientation}} (std\+::string) override
+\begin{DoxyCompactList}\small\item\em A pure virtual member for testing which does not have a body. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_data}{Data}} \& \mbox{\hyperlink{class_n_n_classifier_a9a641cd99c49c26a37624f80d9e6f202}{nearest\+Neighbour}} (\mbox{\hyperlink{class_data}{Data}})
+\begin{DoxyCompactList}\small\item\em A neartest\+Neighbour function that finds the nearest\+Neighbour between points. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_classifier_ac191ba6bd9954db48c791ddc279d9865}{train\+Orientation}} (std\+::string)=0
+\begin{DoxyCompactList}\small\item\em A pure virtual member for testing which does not have a body. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_classifier_a5f7ee263a3c6e1010b241afd6b04dfa4}{predict\+Orientation}} (double, double, double)=0
+\begin{DoxyCompactList}\small\item\em A pure virtual member for testing which does not have a body. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_classifier_a0a7d463ca49fd0b6409b4bfcdfd17bd6}{predict\+Orientation}} (std\+::string)=0
+\begin{DoxyCompactList}\small\item\em A pure virtual member for testing which does not have a body. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_data}{Data}} \mbox{\hyperlink{class_n_n_classifier_a0352fb700e7315541cf548b4a1a97397}{data\+Points}} \mbox{[}\mbox{\hyperlink{_classifer_8h_a78d344caabde729a4559393a0552bf1c}{ARRAYSIZE}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em an array of \mbox{\hyperlink{class_data}{Data}} used for storing data from training \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_data}{Data}} \mbox{\hyperlink{class_n_n_classifier_a6322f92c9c39ee5c623e15830275a2ca}{testing\+Points}} \mbox{[}\mbox{\hyperlink{_classifer_8h_a78d344caabde729a4559393a0552bf1c}{ARRAYSIZE}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em an array of \mbox{\hyperlink{class_data}{Data}} used for checking phone orientation either manually or provided text file \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_n_n_classifier_a2c5f85f65850655662303480e41105ba}{set\+Dimensions}} (std\+::ifstream \&, \mbox{\hyperlink{class_n_n_classifier}{NNClassifier}} \&, \mbox{\hyperlink{class_data}{Data}} \&, int $\ast$, int)
+\begin{DoxyCompactList}\small\item\em A set\+Dimensions that will read data from text file and assign dimensions (attributes) to the \mbox{\hyperlink{class_n_n_classifier}{NNClassifier}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A Class called \mbox{\hyperlink{class_n_n_classifier}{NNClassifier}} that will inherits from \mbox{\hyperlink{class_classifier}{Classifier}} Class. 
+
+Contains functions from \mbox{\hyperlink{class_classifier}{Classifier}} Class and override specifier is used to ensure it gets to the proper function \begin{DoxyAuthor}{Author}
+Hangsihak Sin 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+14/04/2023 
+\end{DoxyDate}
+
+
+Definition at line \mbox{\hyperlink{_n_n_classifier_8h_source_l00026}{26}} of file \mbox{\hyperlink{_n_n_classifier_8h_source}{NNClassifier.\+h}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_n_n_classifier_a9a641cd99c49c26a37624f80d9e6f202}\label{class_n_n_classifier_a9a641cd99c49c26a37624f80d9e6f202}} 
+\index{NNClassifier@{NNClassifier}!nearestNeighbour@{nearestNeighbour}}
+\index{nearestNeighbour@{nearestNeighbour}!NNClassifier@{NNClassifier}}
+\doxysubsubsection{\texorpdfstring{nearestNeighbour()}{nearestNeighbour()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_data}{Data}} \& NNClassifier\+::nearest\+Neighbour (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_data}{Data}}}]{point }\end{DoxyParamCaption})}
+
+
+
+A neartest\+Neighbour function that finds the nearest\+Neighbour between points. 
+
+It determines the nearest neighbour based on data point of current and existing data 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_data}{Data}}} & object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the reference of \mbox{\hyperlink{class_data}{Data}} object 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Hangsihak Sin 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+14/04/2023 
+\end{DoxyDate}
+
+
+Definition at line \mbox{\hyperlink{_n_n_classifier_8cpp_source_l00140}{140}} of file \mbox{\hyperlink{_n_n_classifier_8cpp_source}{NNClassifier.\+cpp}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_n_n_classifier_a9a641cd99c49c26a37624f80d9e6f202_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_n_n_classifier_a9a641cd99c49c26a37624f80d9e6f202_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_n_n_classifier_a33d51eb10d776649fa7c744a061b2f17}\label{class_n_n_classifier_a33d51eb10d776649fa7c744a061b2f17}} 
+\index{NNClassifier@{NNClassifier}!predictOrientation@{predictOrientation}}
+\index{predictOrientation@{predictOrientation}!NNClassifier@{NNClassifier}}
+\doxysubsubsection{\texorpdfstring{predictOrientation()}{predictOrientation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void NNClassifier\+::predict\+Orientation (\begin{DoxyParamCaption}\item[{double}]{,  }\item[{double}]{,  }\item[{double}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+A pure virtual member for testing which does not have a body. 
+
+It will be used to declare the learn\+Orientation which will be used by derived class (concrete class that defines the function). Alsom we have =0 to signify as pure speciifer in pure virtual function 
+\begin{DoxyParams}{Parameters}
+{\em takes} & 3 double data type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void which means nothing 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Hangsihak Sin 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+14/04/2023 
+\end{DoxyDate}
+
+
+Implements \mbox{\hyperlink{class_classifier_a5f7ee263a3c6e1010b241afd6b04dfa4}{Classifier}}.
+
+
+
+Definition at line \mbox{\hyperlink{_n_n_classifier_8cpp_source_l00116}{116}} of file \mbox{\hyperlink{_n_n_classifier_8cpp_source}{NNClassifier.\+cpp}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_n_n_classifier_a33d51eb10d776649fa7c744a061b2f17_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{class_n_n_classifier_a33d51eb10d776649fa7c744a061b2f17_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_n_n_classifier_a0e57abdaad7125b3395fc28ea5cf8e14}\label{class_n_n_classifier_a0e57abdaad7125b3395fc28ea5cf8e14}} 
+\index{NNClassifier@{NNClassifier}!predictOrientation@{predictOrientation}}
+\index{predictOrientation@{predictOrientation}!NNClassifier@{NNClassifier}}
+\doxysubsubsection{\texorpdfstring{predictOrientation()}{predictOrientation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void NNClassifier\+::predict\+Orientation (\begin{DoxyParamCaption}\item[{std\+::string}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+A pure virtual member for testing which does not have a body. 
+
+It will be used to declare the learn\+Orientation which will be used by derived class (concrete class that defines the function). Alsom we have =0 to signify as pure speciifer in pure virtual function 
+\begin{DoxyParams}{Parameters}
+{\em takes} & a string data type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void which means nothing 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Hangsihak Sin 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+14/04/2023 
+\end{DoxyDate}
+
+
+Implements \mbox{\hyperlink{class_classifier_a0a7d463ca49fd0b6409b4bfcdfd17bd6}{Classifier}}.
+
+
+
+Definition at line \mbox{\hyperlink{_n_n_classifier_8cpp_source_l00065}{65}} of file \mbox{\hyperlink{_n_n_classifier_8cpp_source}{NNClassifier.\+cpp}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_n_n_classifier_a0e57abdaad7125b3395fc28ea5cf8e14_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_n_n_classifier_a6857711ba8150b246ff4c79bac978b77}\label{class_n_n_classifier_a6857711ba8150b246ff4c79bac978b77}} 
+\index{NNClassifier@{NNClassifier}!testingOrientation@{testingOrientation}}
+\index{testingOrientation@{testingOrientation}!NNClassifier@{NNClassifier}}
+\doxysubsubsection{\texorpdfstring{testingOrientation()}{testingOrientation()}}
+{\footnotesize\ttfamily void NNClassifier\+::testing\+Orientation (\begin{DoxyParamCaption}\item[{std\+::string}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_n_n_classifier_8cpp_source_l00034}{34}} of file \mbox{\hyperlink{_n_n_classifier_8cpp_source}{NNClassifier.\+cpp}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_n_n_classifier_a6857711ba8150b246ff4c79bac978b77_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_n_n_classifier_af6d010330c751afcf35f6595d72e7d79}\label{class_n_n_classifier_af6d010330c751afcf35f6595d72e7d79}} 
+\index{NNClassifier@{NNClassifier}!trainOrientation@{trainOrientation}}
+\index{trainOrientation@{trainOrientation}!NNClassifier@{NNClassifier}}
+\doxysubsubsection{\texorpdfstring{trainOrientation()}{trainOrientation()}}
+{\footnotesize\ttfamily void NNClassifier\+::train\+Orientation (\begin{DoxyParamCaption}\item[{std\+::string}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+A pure virtual member for testing which does not have a body. 
+
+It will be used to declare the learn\+Orientation which will be used by derived class (concrete class that defines the function). Alsom we have =0 to signify as pure speciifer in pure virtual function 
+\begin{DoxyParams}{Parameters}
+{\em takes} & a string data type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void which means nothing 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Hangsihak Sin 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+14/04/2023 
+\end{DoxyDate}
+
+
+Implements \mbox{\hyperlink{class_classifier_ac191ba6bd9954db48c791ddc279d9865}{Classifier}}.
+
+
+
+Definition at line \mbox{\hyperlink{_n_n_classifier_8cpp_source_l00013}{13}} of file \mbox{\hyperlink{_n_n_classifier_8cpp_source}{NNClassifier.\+cpp}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{class_n_n_classifier_af6d010330c751afcf35f6595d72e7d79_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_n_n_classifier_a2c5f85f65850655662303480e41105ba}\label{class_n_n_classifier_a2c5f85f65850655662303480e41105ba}} 
+\index{NNClassifier@{NNClassifier}!setDimensions@{setDimensions}}
+\index{setDimensions@{setDimensions}!NNClassifier@{NNClassifier}}
+\doxysubsubsection{\texorpdfstring{setDimensions}{setDimensions}}
+{\footnotesize\ttfamily void set\+Dimensions (\begin{DoxyParamCaption}\item[{std\+::ifstream \&}]{fin,  }\item[{\mbox{\hyperlink{class_n_n_classifier}{NNClassifier}} \&}]{nn\+Classifier,  }\item[{\mbox{\hyperlink{class_data}{Data}} \&}]{phone\+Orientation,  }\item[{int $\ast$}]{index,  }\item[{int}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+A set\+Dimensions that will read data from text file and assign dimensions (attributes) to the \mbox{\hyperlink{class_n_n_classifier}{NNClassifier}}. 
+
+data will be written to either testing\+Point and data\+Point depending which determine by the bool value. It is a friend so that we can access data\+Point and testing\+Point outside the class 
+\begin{DoxyParams}{Parameters}
+{\em ifstream} & by reference, \mbox{\hyperlink{class_n_n_classifier}{NNClassifier}} object by reference, \mbox{\hyperlink{class_data}{Data}} object by reference, integer data tye passed by reference, and bool value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void (nothing) 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Hangsihak Sin 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+14/04/2023 
+\end{DoxyDate}
+
+
+Definition at line \mbox{\hyperlink{_read_write_data_8cpp_source_l00011}{11}} of file \mbox{\hyperlink{_read_write_data_8cpp_source}{Read\+Write\+Data.\+cpp}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_n_n_classifier_a0352fb700e7315541cf548b4a1a97397}\label{class_n_n_classifier_a0352fb700e7315541cf548b4a1a97397}} 
+\index{NNClassifier@{NNClassifier}!dataPoints@{dataPoints}}
+\index{dataPoints@{dataPoints}!NNClassifier@{NNClassifier}}
+\doxysubsubsection{\texorpdfstring{dataPoints}{dataPoints}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_data}{Data}} NNClassifier\+::data\+Points\mbox{[}\mbox{\hyperlink{_classifer_8h_a78d344caabde729a4559393a0552bf1c}{ARRAYSIZE}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+an array of \mbox{\hyperlink{class_data}{Data}} used for storing data from training 
+
+
+
+Definition at line \mbox{\hyperlink{_n_n_classifier_8h_source_l00029}{29}} of file \mbox{\hyperlink{_n_n_classifier_8h_source}{NNClassifier.\+h}}.
+
+\mbox{\Hypertarget{class_n_n_classifier_a6322f92c9c39ee5c623e15830275a2ca}\label{class_n_n_classifier_a6322f92c9c39ee5c623e15830275a2ca}} 
+\index{NNClassifier@{NNClassifier}!testingPoints@{testingPoints}}
+\index{testingPoints@{testingPoints}!NNClassifier@{NNClassifier}}
+\doxysubsubsection{\texorpdfstring{testingPoints}{testingPoints}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_data}{Data}} NNClassifier\+::testing\+Points\mbox{[}\mbox{\hyperlink{_classifer_8h_a78d344caabde729a4559393a0552bf1c}{ARRAYSIZE}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+an array of \mbox{\hyperlink{class_data}{Data}} used for checking phone orientation either manually or provided text file 
+
+
+
+Definition at line \mbox{\hyperlink{_n_n_classifier_8h_source_l00032}{32}} of file \mbox{\hyperlink{_n_n_classifier_8h_source}{NNClassifier.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Winter 2023/\+Object Oriented Programming/\+Final Project -\/ Hangsihak Sin/\+Final Project -\/ Lab 08\+\_\+09 -\/ Hangsihak Sin/\+Lab 08\+\_\+09/\mbox{\hyperlink{_n_n_classifier_8h}{NNClassifier.\+h}}\item 
+D\+:/\+Winter 2023/\+Object Oriented Programming/\+Final Project -\/ Hangsihak Sin/\+Final Project -\/ Lab 08\+\_\+09 -\/ Hangsihak Sin/\+Lab 08\+\_\+09/\mbox{\hyperlink{_n_n_classifier_8cpp}{NNClassifier.\+cpp}}\end{DoxyCompactItemize}
